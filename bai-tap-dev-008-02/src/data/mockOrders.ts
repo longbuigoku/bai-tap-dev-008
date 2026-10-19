@@ -1,0 +1,98 @@
+import type { Order } from '../types/order';
+
+export const INITIAL_ORDERS: Order[] = [
+  {
+    id: 'ord-1001',
+    orderNumber: 'ORD-2026-9812',
+    customerName: 'Hoàng Minh Tuấn',
+    customerEmail: 'tuan.hoang@example.com',
+    shippingAddress: 'Tòa nhà Landmark 81, P. 22, Q. Bình Thạnh, TP.HCM',
+    items: [
+      {
+        productId: 'prod-1',
+        productName: 'MacBook Pro 16" M3 Max',
+        unitPrice: 3499,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80',
+      },
+      {
+        productId: 'prod-8',
+        productName: 'AirPods Pro Gen 2 USB-C',
+        unitPrice: 249,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?auto=format&fit=crop&w=300&q=80',
+      },
+    ],
+    totalAmount: 3748,
+    status: 'shipped',
+    createdAt: '2026-10-18T10:30:00Z',
+    trackingCode: 'VNPOST-8839219',
+    note: 'Giao giờ hành chính, gọi trước 15 phút.',
+  },
+  {
+    id: 'ord-1002',
+    orderNumber: 'ORD-2026-9813',
+    customerName: 'Nguyễn Thảo Ly',
+    customerEmail: 'ly.nguyen@example.com',
+    shippingAddress: '45 Lê Duẩn, P. Bến Nghé, Quận 1, TP.HCM',
+    items: [
+      {
+        productId: 'prod-2',
+        productName: 'iPhone 16 Pro Max 256GB',
+        unitPrice: 1199,
+        quantity: 2,
+        image: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=300&q=80',
+      },
+    ],
+    totalAmount: 2398,
+    status: 'processing',
+    createdAt: '2026-10-19T02:15:00Z',
+    note: 'Đóng gói bọc xốp cẩn thận.',
+  },
+  {
+    id: 'ord-1003',
+    orderNumber: 'ORD-2026-9814',
+    customerName: 'Trần Đình Trọng',
+    customerEmail: 'trong.tran@example.com',
+    shippingAddress: 'KĐT Ciputra, P. Phú Thượng, Q. Tây Hồ, Hà Nội',
+    items: [
+      {
+        productId: 'prod-3',
+        productName: 'Sony WH-1000XM5 Wireless ANC',
+        unitPrice: 399,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80',
+      },
+      {
+        productId: 'prod-6',
+        productName: 'Keychron Q1 Pro Wireless Custom',
+        unitPrice: 199,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=300&q=80',
+      },
+    ],
+    totalAmount: 598,
+    status: 'delivered',
+    createdAt: '2026-10-16T08:00:00Z',
+    trackingCode: 'GHN-9023412',
+  },
+  {
+    id: 'ord-1004',
+    orderNumber: 'ORD-2026-9815',
+    customerName: 'Phạm Quỳnh Anh',
+    customerEmail: 'quynhanh.pham@example.com',
+    shippingAddress: '120 Nguyễn Thị Minh Khai, Q. 3, TP.HCM',
+    items: [
+      {
+        productId: 'prod-7',
+        productName: 'Apple Watch Ultra 2 Titanium',
+        unitPrice: 799,
+        quantity: 1,
+        image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80',
+      },
+    ],
+    totalAmount: 799,
+    status: 'pending',
+    createdAt: '2026-10-19T06:45:00Z',
+  },
+];
